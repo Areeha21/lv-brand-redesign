@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Louis Vuitton | Timeless Elegance</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-cream text-dark-black">
+  <!-- Navigation -->
+  <!-- Navigation -->
+<nav class="fixed w-full top-0 z-50 bg-cream border-b border-warm-beige">
+  <div class="flex items-center justify-between px-6 md:px-12 py-5">
+    
+    <!-- Left Navigation Links -->
+    <div class="hidden md:flex gap-8 md:gap-12 text-xs md:text-sm tracking-widest">
+      <a href="#collections" class="nav-link">Collections</a>
+      <a href="#story" class="nav-link">Story</a>
+    </div>
+    
+    <!-- Logo -->
+    <div class="font-serif-custom text-lg md:text-2xl tracking-widest">
+      LOUIS VUITTON
+    </div>
+    
+    <!-- Right Navigation Links -->
+    <div class="hidden md:flex items-center gap-8 md:gap-12 text-xs md:text-sm tracking-widest">
+      <a href="#contact" class="nav-link">Contact</a>
+      <a href="#cart" class="nav-link">Cart (0)</a>
+    </div>
+
+    <!-- Mobile menu button -->
+    <button id="menu-toggle" class="md:hidden text-2xl">☰</button>
+
+  </div>
+
+  <!-- Mobile dropdown menu (sibling of the flex div above, NOT inside it) -->
+  <div id="mobile-menu" class="hidden flex-col items-center gap-4 py-4 bg-cream border-t border-warm-beige">
+    <a href="#collections" class="nav-link">Collections</a>
+    <a href="#story" class="nav-link">Story</a>
+    <a href="#contact" class="nav-link">Contact</a>
+    <a href="#cart" class="nav-link">Cart (0)</a>
+  </div>
+</nav>
+
+  <!-- Hero Section -->
+  <section class="relative w-full h-screen flex items-center justify-center text-center px-4 md:px-6 pt-20" style="background-image: url('images/hero.jpg'); background-size: cover; background-position: center 12%; background-repeat: no-repeat;">
+    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="max-w-3xl relative z-10 text-white">
+      <h1 class="font-serif-custom text-4xl md:text-6xl lg:text-6xl mb-4 md:mb-6 tracking-wide">Timeless Elegance</h1>
+      <p class="text-sm md:text-lg tracking-wide font-light">Crafted for those who value quiet luxury</p>
+      <div class="mt-8 md:mt-12">
+        <a href="#collections" class="inline-block border-2 border-white px-8 md:px-12 py-3 text-xs md:text-sm tracking-widest hover:bg-white hover:text-dark-black transition duration-300">Explore Collections</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story Section -->
+  <section id="story" class="py-16 md:py-24 px-4 md:px-12 lg:px-24">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
+        <!-- Image -->
+        <div class="order-2 md:order-1 overflow-hidden">
+          <img src="images/story.jpg" alt="Brand heritage" class="w-full h-auto object-cover hover:scale-105 transition duration-500">
+        </div>
+        
+        <!-- Content -->
+        <div class="order-1 md:order-2 flex flex-col justify-center">
+          <h2 class="font-serif-custom text-4xl mb-6">Our Story</h2>
+          <p class="text-lg leading-relaxed text-dark-gray text-justify">
+            For over a century, our maison has stood for uncompromising craftsmanship and timeless design. Each piece is created with intention, 
+            a quiet rebellion against the disposable, the trend-driven, the ordinary.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collections Section -->
+  <section id="collections" class="py-16 md:py-24 px-4 md:px-12 lg:px-24 bg-white">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="font-serif-custom text-3xl md:text-4xl lg:text-5xl mb-12 md:mb-16 text-center">Featured Collections</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+        <!-- Collection Card 1 -->
+        <div class="group cursor-pointer collection-card">
+          <div class="relative overflow-hidden bg-warm-beige mb-4 aspect-square">
+            <img src="images/handbags.jpg" alt="Handbags Collection" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          </div>
+          <h3 class="font-serif-custom text-lg md:text-xl mb-2">Handbags</h3>
+          <p class="text-xs md:text-sm text-dark-brown tracking-widest mb-4">ICONIC DESIGNS</p>
+          <a href="#" class="collection-link">View Collection →</a>
+        </div>
+
+        <!-- Collection Card 2 -->
+        <div class="group cursor-pointer collection-card">
+          <div class="relative overflow-hidden bg-warm-beige mb-4 aspect-square">
+            <img src="images/footwear.jpg" alt="Footwear Collection" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          </div>
+          <h3 class="font-serif-custom text-lg md:text-xl mb-2">Footwear</h3>
+          <p class="text-xs md:text-sm text-dark-brown tracking-widest mb-4">ELEVATED ELEGANCE</p>
+          <a href="#" class="collection-link">View Collection →</a>
+        </div>
+
+        <!-- Collection Card 3 -->
+        <div class="group cursor-pointer collection-card">
+          <div class="relative overflow-hidden bg-warm-beige mb-4 aspect-square">
+            <img src="images/accessories.jpg" alt="Accessories Collection" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          </div>
+          <h3 class="font-serif-custom text-lg md:text-xl mb-2">Accessories</h3>
+          <p class="text-xs md:text-sm text-dark-brown tracking-widest mb-4">TIMELESS PIECES</p>
+          <a href="#" class="collection-link">View Collection →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Craftsmanship Section -->
+  <section class="py-16 md:py-24 px-4 md:px-12 lg:px-24 bg-cream">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
+        <!-- Content -->
+        <div class="flex flex-col justify-center">
+          <h2 class="font-serif-custom text-4xl mb-6">Artisan Craftsmanship</h2>
+          <p class="text-lg leading-relaxed text-dark-gray font-light mb-6">
+            Every Louis Vuitton creation begins with a vision and is brought to life through the skilled hands of master artisans. Our commitment to excellence is evident in every stitch, every fold, every detail.
+          </p>
+          <ul class="space-y-4 feature-list">
+            <li>
+              <span>✓</span>
+              <span class="text-base text-dark-brown font-light">Premium materials sourced globally</span>
+            </li>
+            <li>
+              <span>✓</span>
+              <span class="text-base text-dark-brown font-light">Rigorous quality control at every stage</span>
+            </li>
+            <li>
+              <span>✓</span>
+              <span class="text-base text-dark-brown font-light">Handcrafted techniques passed through generations</span>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Image -->
+        <div class="overflow-hidden">
+          <img src="images/craftsmanship.jpg" alt="Craftsmanship" class="w-full h-auto object-cover hover:scale-105 transition duration-500">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="py-16 md:py-20 px-4 md:px-12 lg:px-24 bg-white">
+    <div class="max-w-2xl mx-auto text-center">
+      <h2 class="font-serif-custom text-2xl md:text-3xl mb-4">Stay Informed</h2>
+      <p class="text-sm md:text-base text-dark-gray font-light mb-8">
+        Be the first to discover new collections and exclusive insights from our world.
+      </p>
+      <form class="newsletter-form flex flex-col sm:flex-row gap-3 md:gap-4">
+        <input type="email" placeholder="Enter your email" class="flex-1 px-4 md:px-6 py-3 md:py-4 border border-warm-beige focus:outline-none focus:border-dark-brown text-sm md:text-base transition">
+        <button type="submit" class="px-6 md:px-10 py-3 md:py-4 bg-dark-black text-white text-xs md:text-sm tracking-widest hover:bg-dark-brown transition duration-300 whitespace-nowrap">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark-black text-white py-12 md:py-16 px-4 md:px-12 lg:px-24">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 mb-8 md:mb-12">
+        <!-- Column 1 -->
+        <div>
+          <h4 class="font-serif-custom text-lg mb-4">Company</h4>
+          <ul class="space-y-2 text-sm font-light">
+            <li><a href="#" class="footer-link">About Us</a></li>
+            <li><a href="#" class="footer-link">Careers</a></li>
+            <li><a href="#" class="footer-link">Press</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 2 -->
+        <div>
+          <h4 class="font-serif-custom text-lg mb-4">Customer Service</h4>
+          <ul class="space-y-2 text-sm font-light">
+            <li><a href="#" class="footer-link">Contact Us</a></li>
+            <li><a href="#" class="footer-link">Shipping & Returns</a></li>
+            <li><a href="#" class="footer-link">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div>
+          <h4 class="font-serif-custom text-lg mb-4">Policies</h4>
+          <ul class="space-y-2 text-sm font-light">
+            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+            <li><a href="#" class="footer-link">Terms of Service</a></li>
+            <li><a href="#" class="footer-link">Cookie Settings</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4 -->
+        <div>
+          <h4 class="font-serif-custom text-lg mb-4">Follow Us</h4>
+          <ul class="space-y-2 text-sm font-light">
+            <li><a href="#" class="footer-link">Instagram</a></li>
+            <li><a href="#" class="footer-link">Facebook</a></li>
+            <li><a href="#" class="footer-link">Pinterest</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-warm-beige pt-8">
+        <p class="text-xs md:text-sm text-center font-light text-gray-400">
+          © 2024 Louis Vuitton. All rights reserved. | A quiet rebellion against the ordinary.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
